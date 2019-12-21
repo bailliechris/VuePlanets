@@ -3,7 +3,7 @@
         <h1>{{planet.name}}</h1>
         <p>{{planet.desc}}</p>
         <img v-bind:src="planet.image" width=300>
-        
+        <button v-on:click="$emit('del-planet', planet.id)" class="del">x</button>
     </div>
 </template>
 

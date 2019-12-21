@@ -1,7 +1,7 @@
 <template>
     <div>
        <div v-bind:key="planet.id" v-for="planet in planets">
-           <Planet v-bind:planet="planet" />
+           <Planet v-bind:planet="planet" v-on:del-planet="$emit('del-planet', planet.id)"/>
 
         </div>
     </div>
