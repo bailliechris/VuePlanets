@@ -2,7 +2,7 @@
     <div class = "planet-item">
         <h1>{{planet.name}}</h1>
         <p>{{planet.desc}}</p>
-        <img v-bind:src="planet.image" width=300>
+        <img v-bind:src="planet.image" width=200>
         <button v-on:click="$emit('del-planet', planet.id)" class="del">x</button>
     </div>
 </template>
@@ -17,6 +17,7 @@ export default {
 
 <style scoped>
 .planet-item{
+    display:flex;
     background:cornsilk;
     padding: 10px;
     border-bottom: 1px #ccc dotted;
@@ -27,6 +28,7 @@ export default {
     color:white;
     border:none;
     padding: 5px 9px;
+    max-block-size: 40px;
     border-radius: 50%;
     cursor: pointer;
     float: right;
