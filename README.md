@@ -1,5 +1,7 @@
 # vueplanets
 
+Preview running at: https://fervent-murdock-56da2f.netlify.com/
+
 ## Project setup
 ```
 yarn install
